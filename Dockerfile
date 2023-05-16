@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine-jdk
-MAINTAINER LLA
-COPY target/lla-0.0.1-SNAPSHOT.jar lla-app.jar
-ENTRYPOINT ["java","-jar","/lla-app.jar"]
+FROM amazoncorretto:20
+MAINTAINER Lescano
+COPY target/Portfolio-0.0.1-SNAPSHOT.jar portfolio-arg.jar
+ENTRYPOINT ["java","-jar","/portfolio-arg.jar"]
